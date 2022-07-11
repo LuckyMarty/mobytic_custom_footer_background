@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>mobytic_custom_footer_background</name>
+	<displayName><![CDATA[Mobytic - Custom - Footer Background]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[Module permettant de modifier l\'arrière plan du footer]]></description>
+	<author><![CDATA[Mobytic]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>
