@@ -24,4 +24,10 @@
         color: {$color_a} !important;
         font-weight: bold !important;
     }
+
+    #footer .footer-container > .container > .row > div li a:hover, 
+    #footer #contact-infos a:hover {
+        color: {$color_a_hover} !important;
+        font-weight: bold !important;
+    }
 </style>

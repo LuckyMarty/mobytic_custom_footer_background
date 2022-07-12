@@ -172,6 +172,11 @@ class Mobytic_custom_footer_background extends Module
                     ),
                     array(
                         'type' => 'color',
+                        'name' => 'MOBYTIC_CUSTOM_FOOTER_BACKGROUND_COLOR_A_HOOVER',
+                        'label' => $this->l('Couleur des liens au survol'),
+                    ),
+                    array(
+                        'type' => 'color',
                         'name' => 'MOBYTIC_CUSTOM_FOOTER_BACKGROUND_COLOR_TXT',
                         'label' => $this->l('Couleur des titres/textes'),
                     ),
@@ -191,6 +196,7 @@ class Mobytic_custom_footer_background extends Module
         return array(
             'MOBYTIC_CUSTOM_FOOTER_BACKGROUND_LIVE_MODE' => Configuration::get('MOBYTIC_CUSTOM_FOOTER_BACKGROUND_LIVE_MODE', true),
             'MOBYTIC_CUSTOM_FOOTER_BACKGROUND_COLOR_A' => Configuration::get('MOBYTIC_CUSTOM_FOOTER_BACKGROUND_COLOR_A'),
+            'MOBYTIC_CUSTOM_FOOTER_BACKGROUND_COLOR_A_HOOVER' => Configuration::get('MOBYTIC_CUSTOM_FOOTER_BACKGROUND_COLOR_A_HOOVER'),
             'MOBYTIC_CUSTOM_FOOTER_BACKGROUND_COLOR_TXT' => Configuration::get('MOBYTIC_CUSTOM_FOOTER_BACKGROUND_COLOR_TXT'),
         );
     }
@@ -234,6 +240,7 @@ class Mobytic_custom_footer_background extends Module
         $this->context->smarty->assign([
             'img' => $this->getImgURL('MOBYTIC_CUSTOM_FOOTER_BACKGROUND_BG_IMG'),
             'color_a' => Configuration::get('MOBYTIC_CUSTOM_FOOTER_BACKGROUND_COLOR_A', Tools::getValue('MOBYTIC_CUSTOM_FOOTER_BACKGROUND_COLOR_A')),
+            'color_a_hover' => Configuration::get('MOBYTIC_CUSTOM_FOOTER_BACKGROUND_COLOR_A_HOOVER', Tools::getValue('MOBYTIC_CUSTOM_FOOTER_BACKGROUND_COLOR_A_HOOVER')),
             'color_txt' => Configuration::get('MOBYTIC_CUSTOM_FOOTER_BACKGROUND_COLOR_TXT', Tools::getValue('MOBYTIC_CUSTOM_FOOTER_BACKGROUND_COLOR_TXT')),
         ]);
 
